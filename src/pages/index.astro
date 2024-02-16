@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import "../styles/style.css";
+import Bg from "../assets/img/bg.jpeg";
 ---
 
 <head>
@@ -21,4 +23,97 @@ import "../styles/style.css";
             </ul>
         </nav>
     </div>
+    <div class="joinus">
+        <h1>Únete</h1>
+        <p>Únete y se parte del avance de tu comunicad</p>
+        <button>Conoce más</button>
+    </div>
 </header>
+<section>
+    <div class="container">
+        <article id="ourMission">
+            <h2>Nuestra Misión</h2>
+            <div class="iframe">
+                <iframe
+                    src="https://www.youtube.com/embed/HHf8EyLqnQk"
+                    title="DENTRO DEL CEREBRO: Virginia Antares Rodríguez"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <p>
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim
+                tempor enim. Elit aute irure tempor cupidatat incididunt sint
+                deserunt ut voluptate aute id deserunt nisi.
+            </p>
+        </article>
+        <article id="event">
+            <h2>Eventos</h2>
+            <div class="event-items">
+                <Image src={Bg} alt="hola" class={"item"} />
+                <Image src={Bg} alt="hola" class={"item"} />
+                <Image src={Bg} alt="hola" class={"item"} />
+                <Image src={Bg} alt="hola" class={"item"} />
+                <Image src={Bg} alt="hola" class={"item"} />
+            </div>
+        </article>
+        <article id="donate">
+            <h2>Donaciones</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem vero blanditiis consequatur ullam fuga autem
+                dolorum, obcaecati molestiae in harum reiciendis quaerat
+                inventore voluptatum cum laboriosam voluptate ea repellat quas!
+                Doloribus tempore optio illo, itaque aliquam eum dolor
+                voluptatem cum expedita quia, iure ea veniam quas maiores
+                reprehenderit totam error culpa possimus! Enim libero soluta
+                natus.
+            </p>
+            <div class="donate-numbers">
+                <div class="investment">
+                    <p>0.00</p>
+                    <p>Inversion</p>
+                </div>
+                <div class="total">
+                    <p>0.00</p>
+                    <p>Total</p>
+                </div>
+            </div>
+        </article>
+        <article id="spends">
+            <h2>Gastos</h2>
+        </article>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="logo">
+                <p>HH</p>
+            </div>
+            <div class="navandcopy">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#ourMission">Nuestra Misión</a>
+                        </li>
+                        <li>
+                            <a href="#event">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="#donate">Donaciones</a>
+                        </li>
+                        <li>
+                            <a href="#spends">Gastos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>ⒸTODO 2024. Todos los derechos son reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
